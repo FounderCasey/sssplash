@@ -17,7 +17,7 @@ request.onload = function () {
       card.setAttribute('class', 'card');
 
       const img = document.createElement('img');
-      img.src = photo["urls"].raw;
+      img.src = photo["urls"].regular;
 
       container.appendChild(card);
       card.appendChild(img);

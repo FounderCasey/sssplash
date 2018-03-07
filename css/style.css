@@ -5,20 +5,53 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #666;
+  color: #f0f0f0;
   background: #f0f0f0;
 }
 
 body {
+	font-family: sans-serif;
   margin: 0;
 	background-color: #f0f0f0;
 }
 
-#header {
-  font-size: 3rem;
-  margin: 0;
-  padding: 0;
-  font-weight: 100;
+.toolbar {
+	background: #414141;
+	overflow: hidden;
+	width: 100%;
+}
+
+.toolbar a {
+	float: left;
+	display: block;
+	color: #f0f0f0;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 12px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 12px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
 }
 
 #root {
@@ -33,7 +66,7 @@ body {
 }
 
 .card {
-	margin: 5px auto;
+	margin: 10px auto;
 	display: inline-block;
 	width: 100%;
 	box-shadow: 2px 2px 4px 0 #ccc;
@@ -47,7 +80,13 @@ body {
 	display: block;
 }
 
-@media only screen and (min-width: 400px) {
+.card:hover {
+	box-shadow: 2px 6px 10px rgba(0, 0, 0, .15);
+	transform: translate3d(0, -2px, 0);
+	transition: 0.1s;
+}
+
+@media only screen and (min-width: 500px) {
 	.container {
 		-moz-column-count: 2;
 		-webkit-column-count: 2;
@@ -55,7 +94,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
 	.container {
 		-moz-column-count: 3;
 		-webkit-column-count: 3;
