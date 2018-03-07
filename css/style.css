@@ -2,8 +2,16 @@
   box-sizing: border-box
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #666;
+  background: #f0f0f0;
+}
+
 body {
   margin: 0;
+	background-color: #f0f0f0;
 }
 
 #header {
@@ -13,90 +21,44 @@ body {
   font-weight: 100;
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Dosis', sans-serif;
-  line-height: 1.6;
-  color: #666;
-  background: #F6F6F6;
-}
-
 #root {
   max-width: 95%;
   margin: 0 auto;
 }
 
-h1 {
-  text-align: center;
-  padding: 1.5rem 2.5rem;
-  background-image: linear-gradient(120deg, #c2e7fb 0%, #eea6ca 100%);
-  margin: 0 0 2rem 0;
-  font-size: 1.5rem;
-  color: white;
-}
-
-h6 {
-  text-align: center;
-  font-size: 0.9rem;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-
-img {
-  display: block;
-  width: 100%;
-  vertical-align: middle;
-}
-
-p {
-  padding: 0 2.5rem 2.5rem;
-  margin: 0;
-}
-
 .container {
-  display: flex;
-  flex-wrap: wrap;
+	-moz-column-gap: 1.5em;
+	-webkit-column-gap: 1.5em;
+	column-gap: 1.5em;
 }
 
 .card {
-  margin: 1rem;
-  background: white;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, .1);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all .2s linear;
-  position: relative;
+	margin: 5px auto;
+	display: inline-block;
+	width: 100%;
+	box-shadow: 2px 2px 4px 0 #ccc;
+	overflow: hidden;
+	border-radius: 5px;
 }
 
-.card:hover {
-  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-  transform: translate3D(0, -2px, 0);
+.card img {
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
-@media screen and (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 2rem);
-  }
+@media only screen and (min-width: 400px) {
+	.container {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
 }
 
-@media screen and (min-width: 900px) {
-  .card {
-    flex: 1 1 calc(33% - 2rem);
-  }
-}
-
-.card:nth-child(2n) h1 {
-  background-image: linear-gradient(120deg, #fae884 0%, #f48f8f 100%);
-}
-
-.card:nth-child(4n) h1 {
-  background-image: linear-gradient(120deg, #e49aff 0%, #cff9fe 100%);
-}
-
-.card:nth-child(5n) h1 {
-  background-image: linear-gradient(120deg, #a0ffaf 0%, #afafff 100%);
+@media only screen and (min-width: 700px) {
+	.container {
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+	}
 }
