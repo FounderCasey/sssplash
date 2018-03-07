@@ -1,0 +1,14 @@
+{
+  "name": "sssplash",
+  "version": "1.0.0",
+  "description": "This is a minimalistic Unsplash Client.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Casey Wilcox",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.8.3"
+  }
+}
