@@ -40,8 +40,13 @@ body {
   padding: 6px;
   margin-top: 12px;
   font-size: 17px;
+  background-color: #333;
   border: none;
   outline: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  color: #f0f0f0;
+  text-indent: 10px;
 }
 
 .search-container button {
@@ -54,10 +59,12 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .search-container button:hover {
-  background: #aaa;
+  background: #676767;
 }
 
 #root {
@@ -69,6 +76,7 @@ body {
 	-moz-column-gap: 1.5em;
 	-webkit-column-gap: 1.5em;
 	column-gap: 1.5em;
+	flex-direction: column-reverse;
 }
 
 .card {
