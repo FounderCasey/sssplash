@@ -41,6 +41,7 @@ body {
   margin-top: 12px;
   font-size: 17px;
   border: none;
+  outline: none;
 }
 
 .search-container button {
@@ -51,7 +52,12 @@ body {
   background: #ddd;
   font-size: 17px;
   border: none;
+  outline: none;
   cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #aaa;
 }
 
 #root {
